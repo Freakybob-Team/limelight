@@ -20,15 +20,29 @@
         }
     </style>
 </head>
-<body>
+<body onload="getBrainrot()">
     <div id="flexbox">
     <div>licensed under gpl 3</div>
     <div>font: ubuntu mono</div>
     <div>theme: bash console</div>
     <hr>
     <div>freakybob@limelight:~$ limelight</div>
-    <div>limelight: your brainrot word of the day</div>
+    <div>> limelight: your brainrot word of the day</div>
     <div id="brainrot"></div>
     </div>
+    <script>
+                function getBrainrot() {
+   
+    var brainrot = new Array();
+    brainrot[0] = "skibidi";
+    brainrot[1] = "rizz";
+    brainrot[2] = "greg";
+    brainrot[3] = "freakybob";
+
+var number = Math.floor(Math.random()*brainrot.length); 
+ 
+ return document.getElementById('brainrot').innerHTML = '> your word is ' + brainrot[number]
+} 
+</script>
 </body>
 </html>
